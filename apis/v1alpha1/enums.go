@@ -18,8 +18,8 @@ package v1alpha1
 type AccessDeniedExceptionReason string
 
 const (
-	AccessDeniedExceptionReason_UNAUTHORIZED_ACCOUNT     AccessDeniedExceptionReason = "UNAUTHORIZED_ACCOUNT"
 	AccessDeniedExceptionReason_DEPENDENCY_ACCESS_DENIED AccessDeniedExceptionReason = "DEPENDENCY_ACCESS_DENIED"
+	AccessDeniedExceptionReason_UNAUTHORIZED_ACCOUNT     AccessDeniedExceptionReason = "UNAUTHORIZED_ACCOUNT"
 )
 
 type ChecksumAggregationMethod string
@@ -45,18 +45,18 @@ const (
 type ResourceNotFoundExceptionReason string
 
 const (
-	ResourceNotFoundExceptionReason_SNAPSHOT_NOT_FOUND            ResourceNotFoundExceptionReason = "SNAPSHOT_NOT_FOUND"
-	ResourceNotFoundExceptionReason_GRANT_NOT_FOUND               ResourceNotFoundExceptionReason = "GRANT_NOT_FOUND"
 	ResourceNotFoundExceptionReason_DEPENDENCY_RESOURCE_NOT_FOUND ResourceNotFoundExceptionReason = "DEPENDENCY_RESOURCE_NOT_FOUND"
+	ResourceNotFoundExceptionReason_GRANT_NOT_FOUND               ResourceNotFoundExceptionReason = "GRANT_NOT_FOUND"
 	ResourceNotFoundExceptionReason_IMAGE_NOT_FOUND               ResourceNotFoundExceptionReason = "IMAGE_NOT_FOUND"
+	ResourceNotFoundExceptionReason_SNAPSHOT_NOT_FOUND            ResourceNotFoundExceptionReason = "SNAPSHOT_NOT_FOUND"
 )
 
 type SSEType string
 
 const (
+	SSEType_none    SSEType = "none"
 	SSEType_sse_ebs SSEType = "sse-ebs"
 	SSEType_sse_kms SSEType = "sse-kms"
-	SSEType_none    SSEType = "none"
 )
 
 type ServiceQuotaExceededExceptionReason string
@@ -69,26 +69,26 @@ type Status string
 
 const (
 	Status_completed Status = "completed"
-	Status_pending   Status = "pending"
 	Status_error     Status = "error"
+	Status_pending   Status = "pending"
 )
 
 type ValidationExceptionReason string
 
 const (
-	ValidationExceptionReason_INVALID_CUSTOMER_KEY       ValidationExceptionReason = "INVALID_CUSTOMER_KEY"
-	ValidationExceptionReason_INVALID_PAGE_TOKEN         ValidationExceptionReason = "INVALID_PAGE_TOKEN"
-	ValidationExceptionReason_INVALID_BLOCK_TOKEN        ValidationExceptionReason = "INVALID_BLOCK_TOKEN"
-	ValidationExceptionReason_INVALID_GRANT_TOKEN        ValidationExceptionReason = "INVALID_GRANT_TOKEN"
-	ValidationExceptionReason_INVALID_SNAPSHOT_ID        ValidationExceptionReason = "INVALID_SNAPSHOT_ID"
-	ValidationExceptionReason_UNRELATED_SNAPSHOTS        ValidationExceptionReason = "UNRELATED_SNAPSHOTS"
-	ValidationExceptionReason_INVALID_BLOCK              ValidationExceptionReason = "INVALID_BLOCK"
-	ValidationExceptionReason_INVALID_CONTENT_ENCODING   ValidationExceptionReason = "INVALID_CONTENT_ENCODING"
-	ValidationExceptionReason_INVALID_TAG                ValidationExceptionReason = "INVALID_TAG"
-	ValidationExceptionReason_INVALID_DEPENDENCY_REQUEST ValidationExceptionReason = "INVALID_DEPENDENCY_REQUEST"
-	ValidationExceptionReason_INVALID_PARAMETER_VALUE    ValidationExceptionReason = "INVALID_PARAMETER_VALUE"
-	ValidationExceptionReason_INVALID_VOLUME_SIZE        ValidationExceptionReason = "INVALID_VOLUME_SIZE"
 	ValidationExceptionReason_CONFLICTING_BLOCK_UPDATE   ValidationExceptionReason = "CONFLICTING_BLOCK_UPDATE"
+	ValidationExceptionReason_INVALID_BLOCK              ValidationExceptionReason = "INVALID_BLOCK"
+	ValidationExceptionReason_INVALID_BLOCK_TOKEN        ValidationExceptionReason = "INVALID_BLOCK_TOKEN"
+	ValidationExceptionReason_INVALID_CONTENT_ENCODING   ValidationExceptionReason = "INVALID_CONTENT_ENCODING"
+	ValidationExceptionReason_INVALID_CUSTOMER_KEY       ValidationExceptionReason = "INVALID_CUSTOMER_KEY"
+	ValidationExceptionReason_INVALID_DEPENDENCY_REQUEST ValidationExceptionReason = "INVALID_DEPENDENCY_REQUEST"
+	ValidationExceptionReason_INVALID_GRANT_TOKEN        ValidationExceptionReason = "INVALID_GRANT_TOKEN"
 	ValidationExceptionReason_INVALID_IMAGE_ID           ValidationExceptionReason = "INVALID_IMAGE_ID"
+	ValidationExceptionReason_INVALID_PAGE_TOKEN         ValidationExceptionReason = "INVALID_PAGE_TOKEN"
+	ValidationExceptionReason_INVALID_PARAMETER_VALUE    ValidationExceptionReason = "INVALID_PARAMETER_VALUE"
+	ValidationExceptionReason_INVALID_SNAPSHOT_ID        ValidationExceptionReason = "INVALID_SNAPSHOT_ID"
+	ValidationExceptionReason_INVALID_TAG                ValidationExceptionReason = "INVALID_TAG"
+	ValidationExceptionReason_INVALID_VOLUME_SIZE        ValidationExceptionReason = "INVALID_VOLUME_SIZE"
+	ValidationExceptionReason_UNRELATED_SNAPSHOTS        ValidationExceptionReason = "UNRELATED_SNAPSHOTS"
 	ValidationExceptionReason_WRITE_REQUEST_TIMEOUT      ValidationExceptionReason = "WRITE_REQUEST_TIMEOUT"
 )
